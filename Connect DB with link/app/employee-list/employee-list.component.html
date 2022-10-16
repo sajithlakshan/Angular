@@ -1,0 +1,10 @@
+<p>employee-list works!</p>
+<ul *ngFor="let employe of employees">
+ <li>{{employe.name}}</li>
+</ul>
+<div *ngIf="msgTrue"> Contact OK</div>
+<button (click)="addNewContact()">YOOO Enter Data</button>
+<div *ngIf="Update"> Data Updated</div>
+<button (click)="UpdateData(3)">YOOO Update Data</button>
+<div *ngIf="delete_"> Delete LAST Data</div>
+<button (click)=" DeleteData(7)">Delete Data</button>
